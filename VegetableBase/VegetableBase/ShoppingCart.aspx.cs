@@ -31,6 +31,7 @@ namespace VegetableBase
                     lblTotal.Text = "";
                     ShoppingCartTitle.InnerText = "Shopping Cart is Empty";
                     UpdateBtn.Visible = false;
+                    CheckoutBtn.Visible = false;
                 }
             }
         }
@@ -85,6 +86,11 @@ namespace VegetableBase
         protected void UpdateBtn_Click(object sender, EventArgs e)
         {
             UpdateCartItems();
+        }
+
+        protected void CheckoutBtn_Click(object sender, EventArgs e) 
+        {
+            Response.Redirect("Checkout/Checkout.aspx");
         }
     }
 }
