@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using System.Linq;
 using VegetableBase.Models;
-//using VegetableBase.Logic;
+using VegetableBase.Logic;
 
 namespace VegetableBase
 {
@@ -77,11 +77,11 @@ namespace VegetableBase
 
         protected void Page_PreRender(object sender, EventArgs e)
         {
-          /*  using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+            using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
             {
                 string cartStr = string.Format("Cart ({0})", usersShoppingCart.GetCount());
                 cartCount.InnerText = cartStr;
-            }*/
+            }
         }
 
         public IQueryable<Category> GetCategories()
