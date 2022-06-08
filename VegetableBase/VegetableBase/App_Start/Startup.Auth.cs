@@ -55,15 +55,15 @@ namespace VegetableBase
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "1472592893200918",
+               appSecret: "c5cbef09113992cc7dbcae737e969a0d");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "271765561918-i5r6hdfnjse6vbcd55m3js909ktnc4f4.apps.googleusercontent.com",
+                ClientSecret = "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"
+            });
         }
     }
 }
