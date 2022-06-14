@@ -28,7 +28,7 @@ namespace VegetableBase
                 query = query.Where(p => p.ProductID == productId);
             }
             else if (!String.IsNullOrEmpty(productName))
-            {
+            { 
                 query = query.Where(p =>
                        String.Compare(p.ProductName, productName) == 0);
             }

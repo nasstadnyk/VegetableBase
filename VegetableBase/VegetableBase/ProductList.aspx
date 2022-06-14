@@ -11,14 +11,14 @@
                 DataKeyNames="ProductID" GroupItemCount="4"
                 ItemType="VegetableBase.Models.Product" SelectMethod="GetProducts">
                 <EmptyDataTemplate>
-                    <table >
+                    <table runat="server">
                         <tr>
                             <td>No data was returned.</td>
                         </tr>
                     </table>
                 </EmptyDataTemplate>
                 <EmptyItemTemplate>
-                    <td/>
+                    <td runat="server" />
                 </EmptyItemTemplate>
                 <GroupTemplate>
                     <tr id="itemPlaceholderContainer" runat="server">
@@ -30,26 +30,27 @@
                         <table>
                             <tr>
                                 <td>
-                                    <a href="<%#: GetRouteUrl("ProductByNameRoute", new {productName = Item.ProductName}) %>">
-            <image src='/Catalog/Images/Thumbs/<%#:Item.ImagePath%>'
-              width="100" height="75" border="1" />
-          </a>
+                                    <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
+                                        <img src="/Catalog/Images/Thumbs/<%#:Item.ImagePath%>"
+                                            width="100" height="75" style="border: solid" /></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="<%#: GetRouteUrl("ProductByNameRoute", new {productName = Item.ProductName}) %>">
-            <%#:Item.ProductName%>
-          </a>
+                                    <a href="ProductDetails.aspx?productID=<%#:Item.ProductID%>">
+                                        <span>
+                                            <%#:Item.ProductName%>
+                                        </span>
+                                    </a>
                                     <br />
                                     <span>
                                         <b>Price: </b><%#:String.Format("{0:c}", Item.UnitPrice)%>
                                     </span>
                                     <br />
-                                    <a href="AddToCart.aspx?productID=<%#:Item.ProductID %>">
+                                    <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %>">               
                                         <span class="ProductListItem">
-                                            <b>Add to Cart</b>
-                                        </span>
+                                            <b>Add To Cart<b>
+                                        </span>           
                                     </a>
                                 </td>
                             </tr>
@@ -61,17 +62,17 @@
                     </td>
                 </ItemTemplate>
                 <LayoutTemplate>
-                    <table style="width:100%;">
+                    <table runat="server" style="width:100%;">
                         <tbody>
-                            <tr>
-                                <td>
+                            <tr runat="server">
+                                <td runat="server">
                                     <table id="groupPlaceholderContainer" runat="server" style="width:100%">
-                                        <tr id="groupPlaceholder"></tr>
+                                        <tr id="groupPlaceholder" runat="server"></tr>
                                     </table>
                                 </td>
                             </tr>
-                            <tr>
-                                <td></td>
+                            <tr runat="server">
+                                <td runat="server"></td>
                             </tr>
                             <tr></tr>
                         </tbody>
