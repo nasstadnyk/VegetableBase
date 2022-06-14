@@ -8,16 +8,18 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using VegetableBase.Models;
 
+
 namespace VegetableBase
 {
     public class EmailService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)
         {
-            // Plug in your email service here to send an email.
             return Task.FromResult(0);
         }
+
     }
+}
 
     public class SmsService : IIdentityMessageService
     {
@@ -73,7 +75,7 @@ namespace VegetableBase
             manager.DefaultAccountLockoutTimeSpan = TimeSpan.FromMinutes(5);
             manager.MaxFailedAccessAttemptsBeforeLockout = 5;
 
-            manager.EmailService = new EmailService();
+            //manager.EmailService = new EmailService();
             manager.SmsService = new SmsService();
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)
@@ -99,4 +101,3 @@ namespace VegetableBase
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
         }
     }
-}
