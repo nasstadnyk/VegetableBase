@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.ModelBinding;
 using VegetableBase.Models;
+using System.Web.Routing;
 
 namespace VegetableBase
 {
@@ -16,7 +17,9 @@ namespace VegetableBase
 
         }
 
-        public IQueryable<Product> GetProduct([QueryString("productID")] int? productId)
+        public IQueryable<Product> GetProduct(
+                          [QueryString("productID")] int? productId,
+                          [RouteData] string productName)
         {
             var _db = new VegetableBase.Models.ProductContext();
             IQueryable<Product> query = _db.Products;
@@ -24,7 +27,12 @@ namespace VegetableBase
             {
                 query = query.Where(p => p.ProductID == productId);
             }
-            else
+            else if (!String.IsNullOrEmpty(productName))
+            {
+                query = query.Where(p =>
+                       String.Compare(p.ProductName, productName) == 0);
+            }
+            else 
             {
                 query = null;
             }
