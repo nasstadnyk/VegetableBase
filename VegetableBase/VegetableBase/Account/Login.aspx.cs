@@ -38,7 +38,6 @@ namespace VegetableBase.Account
                 switch (result)
                 {
                     case SignInStatus.Success:
-
                         VegetableBase.Logic.ShoppingCartActions usersShoppingCart = new VegetableBase.Logic.ShoppingCartActions();
                         String cartId = usersShoppingCart.GetCartId();
                         usersShoppingCart.MigrateCart(cartId, Email.Text);
@@ -49,7 +48,7 @@ namespace VegetableBase.Account
                         Response.Redirect("/Account/Lockout");
                         break;
                     case SignInStatus.RequiresVerification:
-                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}", 
+                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}",
                                                         Request.QueryString["ReturnUrl"],
                                                         RememberMe.Checked),
                                           true);

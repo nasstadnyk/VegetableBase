@@ -59,6 +59,7 @@ namespace VegetableBase.Models
                     ImagePath="carconvert.png",
                     UnitPrice = 22.50,
                     CategoryID = 1
+                    
                },
                 new Product
                 {

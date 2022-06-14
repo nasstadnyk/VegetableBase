@@ -42,12 +42,16 @@ namespace VegetableBase.Models
 }
 
 #region Helpers
+
+
 namespace VegetableBase
 {
     public static class IdentityHelper
     {
         // Used for XSRF when linking external logins
         public const string XsrfKey = "XsrfId";
+
+     
 
         public const string ProviderNameKey = "providerName";
         public static string GetProviderNameFromRequest(HttpRequest request)

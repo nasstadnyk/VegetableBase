@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Data.Entity;
 using VegetableBase.Models;
+using VegetableBase.Logic;
 
 namespace VegetableBase
 {
@@ -21,6 +22,9 @@ namespace VegetableBase
 
             //Initialize the DB
             Database.SetInitializer(new ProductDatabaseInitializer());
+
+          
         }
+        
     }
 }
