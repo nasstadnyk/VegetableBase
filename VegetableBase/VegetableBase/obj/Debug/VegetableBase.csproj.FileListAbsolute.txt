@@ -82,3 +82,4 @@ C:\Users\сав\Documents\GitHub\VegetableBase\VegetableBase\VegetableBase\bin\S
 C:\Users\сав\Documents\GitHub\VegetableBase\VegetableBase\VegetableBase\bin\StarkbankEcdsa.dll
 C:\Users\сав\Documents\GitHub\VegetableBase\VegetableBase\VegetableBase\bin\SendGrid.pdb
 C:\Users\сав\Documents\GitHub\VegetableBase\VegetableBase\VegetableBase\bin\SendGrid.xml
+C:\Users\сав\Documents\GitHub\VegetableBase\VegetableBase\VegetableBase\bin\Elmah.dll
