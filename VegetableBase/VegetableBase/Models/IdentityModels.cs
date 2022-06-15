@@ -51,7 +51,8 @@ namespace VegetableBase
         // Used for XSRF when linking external logins
         public const string XsrfKey = "XsrfId";
 
-     
+ 
+
 
         public const string ProviderNameKey = "providerName";
         public static string GetProviderNameFromRequest(HttpRequest request)

@@ -2,7 +2,10 @@
 using System.Web;
 using System.Web.UI;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
+using System.Linq;
 using Owin;
 using VegetableBase.Models;
 

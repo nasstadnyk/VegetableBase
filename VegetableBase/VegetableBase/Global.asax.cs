@@ -23,7 +23,7 @@ namespace VegetableBase
             //Initialize the DB
             Database.SetInitializer(new ProductDatabaseInitializer());
 
-
+           
             // Add Routes.
             RegisterCustomRoutes(RouteTable.Routes);
         }
@@ -40,7 +40,7 @@ namespace VegetableBase
                 "~/ProductDetails.aspx"
             );
         }
-        void Application_Error(object sender, EventArgs e)
+        /*void Application_Error(object sender, EventArgs e)
         {
             Exception exc = Server.GetLastError();
 
@@ -49,6 +49,6 @@ namespace VegetableBase
                 // Pass the error on to the error page.
                 Server.Transfer("ErrorPage.aspx?handler=Application_Error%20-%20Global.asax", true);
             }
-        }
+        }*/
     }
 }
