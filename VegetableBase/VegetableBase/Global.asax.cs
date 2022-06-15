@@ -23,6 +23,7 @@ namespace VegetableBase
             //Initialize the DB
             Database.SetInitializer(new ProductDatabaseInitializer());
 
+
             // Add Routes.
             RegisterCustomRoutes(RouteTable.Routes);
         }
