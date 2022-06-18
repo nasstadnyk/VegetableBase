@@ -10,7 +10,4 @@
 
 namespace VegetableBase
 {
-    public partial class About
-    {
-    }
 }

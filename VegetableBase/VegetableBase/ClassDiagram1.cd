@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VegetableBase.Models.CartItem" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAEgAAACAA=</HashCode>
+      <FileName>Models\CartItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Models.Category" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAgAAAAAAAAAAAAACAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Models.ApplicationDbContext" Collapsed="true">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IdentityModels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Models.Order" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAAAAEAAACAAAAAIIRAAAAAAAAIAQCACAAgAJAAAAAg=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Models.OrderDetail" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgQAAAAA=</HashCode>
+      <FileName>Models\OrderDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Models.Product" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAACAAAgAAAAAAAAAIAAAAAAAAAAAAAAAAAICAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Models.ProductContext" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAABAAAAAAAAIAEAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\ProductContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Models.ProductDatabaseInitializer" Collapsed="true">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAQAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Models\ProductDatabaseInitializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Logic.AddProducts" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\AddProducts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Logic.ExceptionUtility" Collapsed="true">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\ExceptionUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Logic.ShoppingCartActions" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="VegetableBase.Logic.ShoppingCartActions.ShoppingCartUpdates" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Logic\ShoppingCartActions.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAxAAAAjAAAAAAGAAAAEAAAAAAAIAECAAAAAAAACA=</HashCode>
+      <FileName>Logic\ShoppingCartActions.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VegetableBase.Checkout.Checkout" Collapsed="true">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAAAAAAAAAAAAAggAAAAAAAAAAAAgBAAAAIAAAA=</HashCode>
+      <FileName>Checkout\Checkout.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Admin.AdminPage" Collapsed="true">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAEAAAIgAEAAIUACAQICAQQAAUAAQABAAAJgEgE=</HashCode>
+      <FileName>Admin\AdminPage.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.AddToCart" Collapsed="true">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AddToCart.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.ErrorPage" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEAAAAAAAAABBAAAAAAAAAAAAQIAAQA=</HashCode>
+      <FileName>ErrorPage.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Global" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAEAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.ProductDetails" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAACAIAAAA=</HashCode>
+      <FileName>ProductDetails.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.ProductList" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAIAAAA=</HashCode>
+      <FileName>ProductList.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.ShoppingCart" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAIAAQIAAAAAAgABgAAAAAAAAAIAIEAAIAAQA=</HashCode>
+      <FileName>ShoppingCart.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.SiteMaster" Collapsed="true">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAARKBAAAAIQAEEBABAAAAAAIAAAg=</HashCode>
+      <FileName>Site.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Account.ForgotPassword" Collapsed="true">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAIAAAACCAAAAAAAAAAAAAAAAAAAAAAAAACAIAAAA=</HashCode>
+      <FileName>Account\Forgot.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Account.Login" Collapsed="true">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAQAAACCAAAAAAAAAAAAQAAAAABACAAAAAAIgAQA=</HashCode>
+      <FileName>Account\Login.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VegetableBase.Account.Register" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAAAIAAAAAAAAAAAAAAACAAAAAAAAIAA=</HashCode>
+      <FileName>Account\Register.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

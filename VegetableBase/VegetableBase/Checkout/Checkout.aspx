@@ -3,7 +3,7 @@
     <h1>Order Review</h1>
     <p></p>
     <h3 style="padding-left: 33px">Products:</h3>
-    <asp:GridView ID="OrderItemList" runat="server" AutoGenerateColumns="False" GridLines="Both" CellPadding="10" Width="500" BorderColor="#efeeef" BorderWidth="33">              
+ <asp:GridView ID="OrderItemList" runat="server" AutoGenerateColumns="False" GridLines="Both" CellPadding="10" Width="500" BorderColor="#efeeef" BorderWidth="33">              
         <Columns>
             <asp:BoundField DataField="ProductId" HeaderText=" Product ID" />        
             <asp:BoundField DataField="Product.ProductName" HeaderText=" Product Name" />        
@@ -37,4 +37,12 @@
     <p></p>
     <hr />
 
+ <div>
+     <td>
+        <asp:Button ID="CheckoutBtn" runat="server" Text="Checkout" OnClick="CheckoutBtn_Click" />
+      </td>
+     <td>
+         <asp:Button ID="PayBtn" runat="server" Text="PayNow" OnClick="StripeBtn_Click" />
+     </td>
+ </div>
 </asp:Content>
